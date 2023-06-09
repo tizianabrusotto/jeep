@@ -3,34 +3,45 @@
     Introduction to Jakarta Enterprise Edition - JSP
     https://github.com/egalli64/jeep
  -->
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-    id="WebApp_ID" version="4.0">
-
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>
-
-    <!-- slide 9 -->
-    <context-param>
-        <param-name>admin</param-name>
-        <param-value>Tom</param-value>
-    </context-param>
-
-    <error-page>
-        <error-code>404</error-code>
-        <location>/s09/404.jsp</location>
-    </error-page>
-    <error-page>
-        <error-code>500</error-code>
-        <location>/s09/500.jsp</location>
-    </error-page>
-
-    <resource-ref>
-        <res-ref-name>jdbc/hron</res-ref-name>
-        <res-type>javax.sql.DataSource</res-type>
-        <res-auth>Container</res-auth>
-    </resource-ref>
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>admin</param-name>
+    <param-value>Tom</param-value>
+  </context-param>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/s09/404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/s09/500.jsp</location>
+  </error-page>
+  <resource-ref>
+    <res-ref-name>jdbc/hron</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <servlet>
+    <description></description>
+    <display-name>number</display-name>
+    <servlet-name>number</servlet-name>
+    <servlet-class>Excercise.number</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>number</servlet-name>
+    <url-pattern>/number</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>squareroot</display-name>
+    <servlet-name>squareroot</servlet-name>
+    <servlet-class>com.example.jeep.s03.squareroot</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>squareroot</servlet-name>
+    <url-pattern>/squareroot</url-pattern>
+  </servlet-mapping>
 </web-app>
