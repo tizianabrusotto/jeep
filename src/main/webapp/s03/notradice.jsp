@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Result</title>
+<title>Error</title>
 <link rel="stylesheet" href="/jeep/css/my.css">
 </head>
 <body>
 	<h1>Calculating square root</h1>
-	<p>The square root of ${param.number} is: ${result}</p>
+	<p>The number ${param.number} is not valid! Give me a positive number.</p>
 </body>
 </html>

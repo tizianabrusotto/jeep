@@ -7,22 +7,32 @@
 
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="data:;base64,=">
+
 <link rel="stylesheet" href="/jeep/css/simple.css">
 <title>Color selection</title>
 </head>
 
 <body>
-    <h1>Hello!</h1>
-    <form action="greeter">
-        <!--
-            TODO: Pass to the servlet two parameters:
-            
-            user: the user name
-            mood: the user mood, chosen among happy, sleepy, active, ...
-         -->
-        <button>OK</button>
-    </form>
-</body>
+	<h1>Hello!</h1>
 
+	<form action="greeter">
+		<label>User: <input name="name" placeholder="Enter your name"></label>
+
+		<div class="structure">
+			<p>Select how you feel today!</p>
+			<select name="mood">
+				<option value="angry">Angry</option>
+				<option value="happy">Happy</option>
+				<option value="sleepy">Sleepy</option>
+				<option value="bored">Bored</option>
+			</select>
+
+		</div>
+	
+
+
+
+<button>OK</button>
+</form>
+</body>
 </html>

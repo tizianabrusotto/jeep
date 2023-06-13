@@ -2,6 +2,20 @@
     Introduction to Jakarta Enterprise Edition - JSP
     https://github.com/egalli64/jeep
  */
-.active {
-	background-color: #ffff6f;
+.angry {
+	background-color: #CC0000;
+}
+
+.happy {
+	background-color: #C9A0DC;
+}
+
+
+.sleepy {
+	background-color: #1C39BB;
+}
+
+
+.bored {
+	background-color: #808080;
 }

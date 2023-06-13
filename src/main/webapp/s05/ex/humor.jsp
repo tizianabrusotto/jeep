@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Result</title>
-<link rel="stylesheet" href="/jeep/css/my.css">
+<title>How you feel today</title>
 </head>
 <body>
-	<h1>Calculating square root</h1>
-	<p>The square root of ${param.number} is: ${result}</p>
+
 </body>
 </html>
